@@ -44,15 +44,15 @@ nav ul li{
     flex-wrap: wrap;
  }
 
-
-nav ul li a{
+.under-link {
+    
     color: #bc6c25;
     text-decoration: none;
     font-size: large;
     position: relative;
- }
+}
 
-nav ul li a::after{
+.under-link::after {
     content: '';
     width: 0;
     height: 3px;
@@ -61,11 +61,12 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
- }
+}
 
-nav ul li a:hover::after{
+.under-link:hover::after {
     width: 100%;
- }
+}
+
 
  /*main*/
 main{
@@ -97,6 +98,10 @@ main{
     
 }
 
+.more-soon {
+    text-align: center;
+}
+
 /*2nd section*/
 .projects1{
     text-align: center;
@@ -104,10 +109,16 @@ main{
     border-color: black;
     padding: 50px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #coming-soon{
-    width: 200px;
+    max-height: 200px;
+    height: 100%;
 }
 
 .socials1{
@@ -120,7 +131,8 @@ main{
 }
 
 .Myprojects{
-    width: 100%;
+    text-align: center;
+    font-size: 24px;
 }
 
 .hyperlink{
@@ -132,7 +144,9 @@ main{
 
 }
 .linkpic{
-    width: 15%;
+    max-width: 200px;
+    width: 100%;
+    opacity: 50%;
 }
 
 footer{
