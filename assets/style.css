@@ -146,9 +146,17 @@ main{
 .linkpic{
     max-width: 200px;
     width: 100%;
-    opacity: 50%;
+   
 }
 
+.darken{
+   filter: brightness(100%); 
+   transition: all 0.5s;   
+}
+
+.darken:hover{
+    filter: brightness(80%);
+}
 footer{
      width: 100%;
      height: 20vh;
