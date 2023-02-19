@@ -17,9 +17,11 @@ header{
 
 .header{
     width: 100%;
-    height: 20vh;
+    height: 40vh;
     padding: 10px 10%;
     font-size: xx-large;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .T{
@@ -41,6 +43,7 @@ nav ul li{
     margin: 10px 20px;
     flex-wrap: wrap;
  }
+
 
 nav ul li a{
     color: #bc6c25;
@@ -75,10 +78,15 @@ img{
 }
 
 #bio{
-    padding: 100px;
+    padding: 10px;
     margin: 10px;
     border: 5px;
     border-color: #283618;
+    font-size: 140%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .bio-text{
@@ -94,6 +102,7 @@ img{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .socials1{
@@ -104,3 +113,22 @@ img{
     width: 100%;
     justify-content: center;
 }
+
+.Myprojects{
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    
+    body {
+      background:  #fefae0;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+   
+    body {
+      background: #4d6b4d;
+    }
+  }
